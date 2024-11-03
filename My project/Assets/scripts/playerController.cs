@@ -12,6 +12,10 @@ public class playerController : MonoBehaviour
     public float speed = 5;
 
     public Rigidbody rigidbody;
+    
+    public Transform startPoint;
+
+    public int zebranePunkty; 
 
 
     // Start is called before the first frame update
@@ -39,5 +43,13 @@ public class playerController : MonoBehaviour
             rigidbody.AddForce(0, 0, directionVertical * Time.deltaTime * speed, ForceMode.Impulse);
         }
 
+        if (transform.position.y < 0)
+        {
+            transform.position = startPoint.position;
+            rigidbody.velocity = Vector3.zero;
+        }
+   
+    
+    
     }
 }

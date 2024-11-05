@@ -6,7 +6,7 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public playerController playerController;
-    public TextMeshPro textMeshPro;
+    public TextMeshProUGUI text;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +17,12 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        text.text = playerController.zebranePunkty.ToString();
+
+        if (playerController.zebranePunkty == 6)
+        {
+            text.color = Color.green;
+        }
+
     }
 }

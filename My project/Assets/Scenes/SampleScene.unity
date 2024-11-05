@@ -182,7 +182,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e6b9b44320f4448d9d5e0ee634259966, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -296,7 +296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2a26f6897674847b6457a27b009b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 2043790522}
 --- !u!136 &406231013
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -445,7 +444,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e6b9b44320f4448d9d5e0ee634259966, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -537,7 +536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2a26f6897674847b6457a27b009b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 2043790522}
 --- !u!136 &541732357
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -865,7 +863,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2a26f6897674847b6457a27b009b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 2043790522}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,8 +989,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4915e44e37acc544b129232e0d6fa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 2043790522}
-  iloscPunktowDoZebrania: 0
 --- !u!65 &725280628
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1246,7 +1241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2a26f6897674847b6457a27b009b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 2043790522}
 --- !u!136 &837457290
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1489,7 +1483,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2a26f6897674847b6457a27b009b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 2043790522}
 --- !u!136 &970007971
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2084,7 +2077,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2a26f6897674847b6457a27b009b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 2043790522}
 --- !u!136 &1613771147
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2293,6 +2285,7 @@ GameObject:
   - component: {fileID: 2043790517}
   - component: {fileID: 2043790521}
   - component: {fileID: 2043790522}
+  - component: {fileID: 2043790523}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -2429,6 +2422,22 @@ MonoBehaviour:
   rigidbody: {fileID: 0}
   startPoint: {fileID: 1038705855}
   zebranePunkty: 0
+--- !u!114 &2043790523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043790516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 927d3ea8da1350b4392302728337c0ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rigidbody: {fileID: 0}
+  startPoint: {fileID: 0}
+  zebranePunkty: 6
 --- !u!1 &2055789578
 GameObject:
   m_ObjectHideFlags: 0
@@ -2663,7 +2672,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e6b9b44320f4448d9d5e0ee634259966, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 03322d4cd6b270944beb981600460ed9
+  - enabled: 1
+    path: Assets/Scenes/GOTOWA GRA.unity
+    guid: 569f96dac037d3d488618a2a80bae353
   m_configObjects: {}

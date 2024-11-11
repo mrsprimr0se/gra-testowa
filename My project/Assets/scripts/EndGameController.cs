@@ -7,10 +7,13 @@ public class EndGameController : MonoBehaviour
     public playerController playerController;
     public int iloscPunktowDoZebrania;
 
+    public AudioSource audioSource;
+    public AudioClip audioClip;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,6 +28,7 @@ public class EndGameController : MonoBehaviour
         {
             if (playerController.zebranePunkty == iloscPunktowDoZebrania)
             {
+                audioSource.PlayOneShot(audioClip); 
                 Debug.Log("Zebrano wszystkie punkty. Koniec gry");
             }
         }
